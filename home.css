@@ -1,0 +1,159 @@
+@font-face {
+    /* font-family: 'Belleza-Regular';
+    src: url('fonts/Belleza-Regular_99.woff') format('woff'); */
+    /* You may also provide other font formats (e.g., 'ttf', 'otf') for cross-browser compatibility */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* Body content background color */
+    /* font-family: "Belleza-Regular", sans-serif; */
+    /* Use the custom font */
+    overflow-x: hidden;
+    /* Prevent both horizontal and vertical scrolling */
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fda500;
+    /* Header background color */
+    padding: 2px;
+    text-align: center;
+    position: sticky;
+    top: 0; /* Stick the header at the top of the viewport */
+    z-index: 100; /* Ensure it's above other content */
+}
+/* Style for the logo images */
+.header-logo {
+    max-width: 3rem; /* Adjust as needed */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Style for the header text */
+.header-text {
+    display: inline-block;
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #d6531f;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+/* Style for circular images */
+.circular-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Maintain aspect ratio and crop as needed */
+    object-position: center;
+    /* Center the image within the circle */
+    margin: 10px;
+    /* Adjust the margin as needed */
+}
+
+.content {
+    max-width: 63rem;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+    /* Enable vertical scrolling within the content area */
+    /* max-height: calc(100vh - 20rem); */
+    /* Adjust based on header and footer heights */
+}
+
+footer {
+    background-color: #fda500;
+    /* Footer background color */
+    /* padding: 20px; */
+    text-align: center;
+    /* width: 100%; */
+    /* position: sticky; */
+    /* bottom: 0; */
+    /* Stick the footer to the bottom of the viewport */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Style for the Google Map iframe */
+.map-iframe {
+    width: 20rem;
+    height: 20rem; /* Adjust the height as needed */
+    border: none; /* Remove the iframe border */
+}
+
+/* Style for the About Us section */
+.about-us {
+    flex: 1;
+    height: 25rem; /* Adjust the height as needed */
+    width: 50%; /* Adjust the width as needed */
+    margin-right: -49rem; /* Reduce the margin */
+}
+
+/* Style for the address */
+.address {
+    flex: 1;
+    /* text-align: right; */
+    height: 25rem; /* Adjust the height as needed */
+    width: 50%; /* Adjust the width as needed */
+}
+/* Style for headings */
+.section-heading {
+    font-weight: bold;
+}
+
+.lineclass {
+    text-decoration: underline
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: auto;
+    align-content: center;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    row-gap: 8px;
+}
+
+.gallery {
+    padding: 100px;
+}
+
+.gallery img {
+    max-width: 100%;
+    align-self: center;
+}
+
+div>img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    min-height: 70%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+}

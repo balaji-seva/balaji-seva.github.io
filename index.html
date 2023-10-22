@@ -9,120 +9,16 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <style>
-        @font-face {
-            font-family: 'Belleza-Regular';
-            src: url('fonts/Belleza-Regular_99.woff') format('woff');
-            /* You may also provide other font formats (e.g., 'ttf', 'otf') for cross-browser compatibility */
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            /* Body content background color */
-            font-family: "Belleza-Regular", sans-serif;
-            /* Use the custom font */
-            overflow: hidden;
-            /* Prevent both horizontal and vertical scrolling */
-            font-size: 1.2rem;
-        }
-
-        header {
-            background-color: #fda500;
-            /* Header background color */
-            padding: 2px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin: 10px;
-        }
-
-        /* Style for circular images */
-        .circular-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            /* Maintain aspect ratio and crop as needed */
-            object-position: center;
-            /* Center the image within the circle */
-            margin: 10px;
-            /* Adjust the margin as needed */
-        }
-
-        .content {
-            max-width: 63rem;
-            margin: 0 auto;
-            padding: 20px;
-            overflow-y: auto;
-            /* Enable vertical scrolling within the content area */
-            max-height: calc(100vh - 20rem);
-            /* Adjust based on header and footer heights */
-        }
-
-        footer {
-            background-color: #fda500;
-            /* Footer background color */
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-            position: sticky;
-            bottom: 0;
-            /* Stick the footer to the bottom of the viewport */
-        }
-
-        .lineclass {
-            text-decoration: underline
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            justify-items: auto;
-            align-content: center;
-            grid-column-gap: 8px;
-            grid-row-gap: 8px;
-            row-gap: 8px;
-        }
-
-        .gallery {
-            padding: 100px;
-        }
-
-        .gallery img {
-            max-width: 100%;
-            align-self: center;
-        }
-
-        div>img {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            min-height: 70%;
-            min-width: 100%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
     <header>
         <!-- Circular images in the header -->
-        <img width="114" height="111" src="./img/logo-p1.png">
-        <img width="457" height="133" src="./img/logo-p2.png">
-        <img width="123" height="111" src="./img/logo-p3.png">
+        <img width="114" height="111" class="header-logo" src="./img/logo-p1.png">
+        <!-- <img width="457" height="133" src="./img/logo-p2.png"> -->
+        <span class="header-text"> Balaji Seva Foundation</span>
+        <img width="123" height="111" class="header-logo" src="./img/logo-p3.png">
         <nav>
             <ul>
                 <li><a href="javascript:void(0);" onclick="loadAbout()" style="text-decoration: none;">ABOUT</a></li>
@@ -461,18 +357,24 @@
                 questions or would like to learn more about Balaji Seva Foundation and the programs we support, please
                 contact
                 us at:</p>
-            <p class="s2"
-                style="padding-top: 14pt;padding-left: 114pt;text-indent: -40pt;line-height: 81%;text-align: left;">
-                Email<a href="mailto:balajisevafoundation@gamail.com" class="a" target="_blank">: </a><span
-                    class="p">contact@bsfui.org, </span>Ph#<span class="p">: 408-203-1036
-                </span>Address<span class="p">: BALAJI SEVA FOUNDATION INC
-                    5010 N 1ST STREET PO BOX 1146 SAN JOSE, CA 95002</span></p>
+            <p class="s2"style="padding-top: 14pt;padding-left: 114pt;text-indent: -40pt;line-height: 81%;text-align: left; display: grid;">
+                <span class="p" style="padding: 0 0 1rem 0;">Email<a href="mailto:contact@bsfui.org" class="a" target="_blank">: </a>contact@bsfui.org </span>
+                <span class="p" style="padding: 0 0 1rem 0;">Ph#: 408-203-1036</span>
+                <span class="p" style="padding: 0 0 1rem 0;">Address: Balaji Seva Foundation INC</span>
+                <span style="padding: 0 5rem 1rem;"> N 1ST Street PO BOX 1146 </span>
+                <span style="padding: 0 5rem 1rem;">San Jose, CA 95002</span>
+            </p>
         </div>
     </div>
     <footer>
-        <div>Email: contact@bsfui.org, Ph#: 408-203-1036 </div>
-        <span>Address: BALAJI SEVA FOUNDATION INC
-            5010 N 1ST STREET PO BOX 1146 SAN JOSE, CA 95002</span>
+        <div class="about-us">
+            <p class="section-heading">ABOUT US</p>
+            <p>We are registered as IRC (IRC) 501(c)(3) non-profit organization.<br> Tax ID 93-1731590.</p>
+        </div>
+        <div class="address">
+            <p class="section-heading">ADDRESS</p>
+            <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12074.482215864852!2d-121.88368748361438!3d37.368656699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc4bb916f07d3%3A0x7278f7b45ec3c91!2s5010%20N%201st%20St%2C%20San%20Jose%2C%20CA%2095022!5e0!3m2!1sen!2sus!4v1561418666032!5m2!1sen!2sus"></iframe>
+        </div>
     </footer>
     <script>
         function loadAbout() {
