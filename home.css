@@ -87,7 +87,8 @@ nav li {
 }
 
 footer {
-    background-color: #fda500;
+    /* background-color: #fda500; */
+    background-color: antiquewhite;
     /* Footer background color */
     /* padding: 20px; */
     text-align: center;
