@@ -52,14 +52,30 @@ header h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Style for the navigation */
+nav {
+    width: 100%; /* Ensure the nav takes full width */
+    padding: 2rem;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Horizontally center the list items */
+}
+
+/* Style for the navigation list items */
 nav li {
-    display: inline;
-    margin: 10px;
+    margin: 0 10px; /* Add horizontal spacing between items */
+}
+/* Style for the navigation links */
+nav a {
+    text-decoration: none;
+    /* color: #fff; */
+    font-weight: bold;
+    font-size: 16px;
 }
 
 /* Style for circular images */
@@ -112,7 +128,8 @@ footer {
     flex: 1;
     height: 25rem; /* Adjust the height as needed */
     width: 50%; /* Adjust the width as needed */
-    margin-right: -49rem; /* Reduce the margin */
+    margin: 0; /* Reduce the margin */
+    padding-left: 12rem;
 }
 
 /* Style for the address */
@@ -121,6 +138,7 @@ footer {
     /* text-align: right; */
     height: 25rem; /* Adjust the height as needed */
     width: 50%; /* Adjust the width as needed */
+    padding-right: 10rem;
 }
 /* Style for headings */
 .section-heading {
@@ -157,4 +175,59 @@ div>img {
     min-height: 70%;
     min-width: 100%;
     transform: translate(-50%, -50%);
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button (the Charity Programs link) */
+.dropdown .dropbtn {
+    /* background-color: #fda500;
+    color: #ffffff; */
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the dropdown content (the program links) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fda500;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style for the program links in the dropdown */
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #ffcc00;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Align the dropdown content to the right */
+.dropdown-content {
+    right: 0;
+}
+
+/* Style for the dropdown arrow (you can customize this) */
+.dropdown .dropbtn::after {
+    content: '\25BC';
+    font-size: 12px;
+    margin-left: 5px;
 }

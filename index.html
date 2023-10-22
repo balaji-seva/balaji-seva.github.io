@@ -19,18 +19,24 @@
         <!-- <img width="457" height="133" src="./img/logo-p2.png"> -->
         <span class="header-text"> Balaji Seva Foundation</span>
         <img width="123" height="111" class="header-logo" src="./img/logo-p3.png">
-        <nav>
-            <ul>
-                <li><a href="javascript:void(0);" onclick="loadAbout()" style="text-decoration: none;">ABOUT</a></li>
-                <li><a href="javascript:void(0);" onclick="loadGallery()" style="text-decoration: none;">GALLERY</a>
-                </li>
-                <li><a href="javascript:void(0);" onclick="loadPonsorship()"
-                        style="text-decoration: none;">SPONSORSHIP</a></li>
-                <li><a href="javascript:void(0);" onclick="loadContact()" style="text-decoration: none;">CONTACT
-                        US</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#about-content" onclick="showContent('about-content')" style="text-decoration: none;">ABOUT</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">CHARITY PROGRAMS</a>
+                <div class="dropdown-content">
+                    <a href="#food-drives" onclick="showContent('food-drives')">Food Drives</a>
+                    <a href="#free-medical-clinic" onclick="showContent('free-medical-clinic')">Free Medical Clinic</a>
+                    <a href="#wellness-program" onclick="showContent('wellness-program')">Wellness Program</a>
+                </div>
+            </li>
+            <li><a href="javascript:void(0);" onclick="showContent('donate-content')"
+                    style="text-decoration: none;">DONATE</a></li>
+            <li><a href="javascript:void(0);" onclick="showContent('contact-content')" style="text-decoration: none;">CONTACT
+                    US</a></li>
+        </ul>
+    </nav>
     <div class="content">
         <!-- Place the content here -->
         <div id="about-content">
@@ -76,17 +82,18 @@
                 Foundation, we believe that every person has the potential to make a positive impact on the world. To
                 start the
                 project, we have three sponsorships available for people to support the mission.</p>
-            <p style="text-indent: 0pt;text-align: left;" />
+            <!-- <p style="text-indent: 0pt;text-align: left;" />
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="text-indent: 0pt;text-align: center;"><span>
                     <img width="166" height="64" src="./img/thankyou.png" />
 
                 </span></p>
             <p style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: center;">Balaji Seva Foundation
-            </p>
+            </p> -->
         </div>
-        <!-- Place the ponsorship content -->
-        <div id="ponsorship-content">
+        <!-- Place the donate content -->
+        <div id="donate-content" style="display: none;">
+            We are raising fund in the following three categories
             <ol id="l1">
                 <li data-list-text="1.">
                     <p class="s2 lineclass"
@@ -121,16 +128,16 @@
                             class="p">ponsorship 3 (Funds to sponsor education – goal $100K in next 6 months)</span></p>
                 </li>
             </ol>
-            <p style="padding-top: 14pt;padding-left: 5pt;text-indent: 0pt;line-height: 91%;text-align: left;">Donate
+            <p style="padding-top: 14pt;padding-left: 35pt;text-indent: 0pt;line-height: 91%;text-align: left;">Donate
                 generously
                 any amount you can and funds will be used towards sponsoring educational goals.</p>
             <p style="padding-top: 4pt;text-indent: 0pt;text-align: center;">Your support is crucial to our mission!</p>
-            <p style="padding-top: 14pt;padding-left: 111pt;text-indent: -77pt;line-height: 81%;text-align: left;">By
+            <p style="padding-top: 14pt;padding-left: 33pt;text-indent: 0pt;line-height: 91%;text-align: left;">By
                 donating
                 to the Balaji Seva Foundation, you can help bring sunshine into the lives of children who do not have
                 access to
                 education.</p>
-            <p style="padding-top: 14pt;padding-left: 15pt;text-indent: 0pt;line-height: 81%;text-align: center;">Your
+            <p style="padding-top: 14pt;padding-left: 26pt;text-indent: 0pt;line-height: 81%;text-align: center;">Your
                 donation
                 will go directly towards building a school of Vedic learning along with a state-approved curriculum and
                 making a
@@ -177,7 +184,7 @@
             </p>
         </div>
         <!-- Place the gallery here -->
-        <div id="gallery-content">
+        <div id="gallery-content" style="display: none;">
             <br>
             <br>
             <br>
@@ -351,18 +358,50 @@
             </div>
         </div>
         <!-- Place the contact content here -->
-        <div id="contact-content">
+        <div id="contact-content" style="display: none;">
             <p style="padding-top: 7pt;padding-left: 70pt;text-indent: -32pt;line-height: 81%;text-align: left;">If you
                 have any
                 questions or would like to learn more about Balaji Seva Foundation and the programs we support, please
                 contact
                 us at:</p>
             <p class="s2"style="padding-top: 14pt;padding-left: 114pt;text-indent: -40pt;line-height: 81%;text-align: left; display: grid;">
-                <span class="p" style="padding: 0 0 1rem 0;">Email<a href="mailto:contact@bsfui.org" class="a" target="_blank">: </a>contact@bsfui.org </span>
-                <span class="p" style="padding: 0 0 1rem 0;">Ph#: 408-203-1036</span>
+                <span class="p" style="padding: 0 0 1rem 0;">Email<a href="mailto:bsfui@bsfui.org" class="a" target="_blank">: </a>bsfui@bsfui.org </span>
+                <span class="p" style="padding: 0 0 1rem 0;">Ph#: 408-690-3805</span>
                 <span class="p" style="padding: 0 0 1rem 0;">Address: Balaji Seva Foundation INC</span>
-                <span style="padding: 0 5rem 1rem;"> N 1ST Street PO BOX 1146 </span>
+                <span style="padding: 0 5rem 1rem;"> 5010 N 1ST Street PO BOX 1146 </span>
                 <span style="padding: 0 5rem 1rem;">San Jose, CA 95002</span>
+            </p>
+        </div>
+        <div id="food-drives" style="display: none; font-style: oblique;">
+            <!-- Food Drives content goes here -->
+            <span style="font-weight: bold;font-size: 19px;">Food Drives </span>
+            <p>Food drive to needy school kids in India</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="content1"><img src="./img/3.jpeg" alt=""></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content1"><img src="./img/6.jpeg" alt=""></div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="free-medical-clinic" style="display: none; font-style: oblique;">
+            <!-- Free Medical Clinic content goes here -->
+            <span style="font-weight: bold;font-size: 19px;">Free Medical Clinic</span>
+            <p>
+                Balaji Seva Foundation runs a free medical clinic in San Jose every month. The clinic is open to everyone; irrespective of race, religion and identity.<br>
+                <img src="./img/Dr.png"/>
+                <br>
+                Dr Srinivasa K Ashok kumar MD: Internal Medicine provides his services.
+            </p>
+        </div>
+        <div id="wellness-program" style="display: none; font-style: oblique;">
+            <!-- Wellness Program content goes here -->
+            <span style="font-weight: bold;font-size: 19px;">3)	Wellness Program (Yoga and Meditation Sessions)</span>
+            <p>
+                1 in 5 adults have a mental health condition. 1 in 5 youth experiences a severe mental disorder. 300 million people around the world are living with depression. Our wellness programs aim to focus on the human mind and body.Free Yoga and Meditation sessions are open to everyone. Sessions are conducted every Sunday.These sessions have proven to heal the human mind, body and provide peace, harmony and strength to the mankind.The instructors help deepen your asana practice with yoga sessions and get in touch with your body with mindfulness meditation.
+
             </p>
         </div>
     </div>
@@ -377,35 +416,34 @@
         </div>
     </footer>
     <script>
-        function loadAbout() {
-            document.getElementById("about-content").style.display = "block";
-            document.getElementById("gallery-content").style.display = "none";
-            document.getElementById("ponsorship-content").style.display = "none";
-            document.getElementById("contact-content").style.display = "none";
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if there's a hash in the URL
+            if (window.location.hash) {
+                // Get the hash value (e.g., #food-drives)
+                var hash = window.location.hash.substring(1);
+
+                // Show the corresponding content section
+                showContent(hash);
+            }
+        });
+        function showContent(contentId) {
+            // Hide all content sections
+            hideAllContent();
+
+            // Show the selected content section
+            const selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
         }
 
-        function loadGallery() {
-            document.getElementById("about-content").style.display = "none";
-            document.getElementById("gallery-content").style.display = "block";
-            document.getElementById("ponsorship-content").style.display = "none";
-            document.getElementById("contact-content").style.display = "none";
+        function hideAllContent() {
+            // Get all content sections and hide them
+            const contentSections = document.querySelectorAll('.content > div');
+            contentSections.forEach(section => {
+                section.style.display = 'none';
+            });
         }
-
-        function loadPonsorship() {
-            document.getElementById("ponsorship-content").style.display = "block";
-            document.getElementById("about-content").style.display = "none";
-            document.getElementById("gallery-content").style.display = "none";
-            document.getElementById("contact-content").style.display = "none";
-        }
-        function loadContact() {
-            document.getElementById("contact-content").style.display = "block";
-            document.getElementById("ponsorship-content").style.display = "none";
-            document.getElementById("about-content").style.display = "none";
-            document.getElementById("gallery-content").style.display = "none";
-        }
-
-        // Initially load the "About" content
-        loadAbout();
     </script>
 </body>
 
