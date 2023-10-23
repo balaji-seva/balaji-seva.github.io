@@ -25,7 +25,7 @@ header {
 }
 /* Style for the logo images */
 .header-logo {
-    max-width: 3rem; /* Adjust as needed */
+    max-width: 6rem; /* Adjust as needed */
     height: auto;
     display: inline-block;
     vertical-align: middle;
@@ -116,6 +116,7 @@ footer {
     width: 20rem;
     height: 20rem; /* Adjust the height as needed */
     border: none; /* Remove the iframe border */
+    padding-left: 11rem;
 }
 
 /* Style for the About Us section */
@@ -123,7 +124,6 @@ footer {
     flex: 1;
     width: 50%; /* Adjust the width as needed */
     margin: 0; /* Reduce the margin */
-    padding-left: 12rem;
 }
 
 /* Style for the address */
@@ -224,4 +224,14 @@ div>img {
     content: '\25BC';
     font-size: 12px;
     margin-left: 5px;
+}
+
+.medical-description-class {
+    padding: 1rem;
+}
+
+.about-img-description {
+    font-style: oblique;
+    font-size: 18px;
+    padding: 0 1rem;
 }
