@@ -25,7 +25,7 @@ header {
 }
 /* Style for the logo images */
 .header-logo {
-    max-width: 6rem; /* Adjust as needed */
+    max-width: 7rem; /* Adjust as needed */
     height: auto;
     display: inline-block;
     vertical-align: middle;

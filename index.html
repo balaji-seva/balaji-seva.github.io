@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="#about-content" onclick="showContent('about-content')" style="text-decoration: none;">ABOUT</a></li>
-            <li class="dropdown">
+            <li class="dropdown" id="charity-programs">
                 <a href="javascript:void(0)" class="dropbtn">CHARITY PROGRAMS</a>
                 <div class="dropdown-content">
                     <a href="#food-drives" onclick="showContent('food-drives')">Food Drives</a>
@@ -76,8 +76,8 @@
                 months at the cost of $500,000.</p>
             <div>
                 <span>
-                    <img style="padding: 0 1rem;height: 339px;" src="./img/ground1.jpeg"/>
-                    <img style="height: 339px;" src="./img/ground2.jpeg"/>
+                    <img style="padding: 0 1rem;height: 21.1rem;" src="./img/ground2.jpeg"/>
+                    <img style="height: 21.1rem;" src="./img/ground1.jpeg"/>
                 </span>
                 <div class="about-img-description">
                     School groundbreaking ceremony was performed on April 18th 2023 in Bangalore at 11 AM IST
@@ -388,10 +388,10 @@
             <p style="padding: 1rem;">Food drive to needy school kids in India</p>
             <div class="gallery">
                 <div class="gallery-item">
-                    <div class="content1"><img src="./img/6.jpeg" alt=""></div>
+                    <div class="content1"><img src="./img/3.jpeg" alt=""></div>
                 </div>
                 <div class="gallery-item">
-                    <div class="content1"><img src="./img/3.jpeg" alt=""></div>
+                    <div class="content1"><img src="./img/6.jpeg" alt=""></div>
                 </div>
             </div>
             
@@ -418,8 +418,8 @@
     </div>
     <footer>
         <div class="about-us">
-            <p class="section-heading">ABOUT US</p>
-            <p>We are registered as IRC 501(c)(3) non-profit organization.<br> Tax ID 93-1731590.</p>
+            <div class="section-heading" style="padding: 0 0 0.5rem 0;">ABOUT US</div>
+            <div>We are registered as IRC 501(c)(3) non-profit organization.<br> Tax ID 93-1731590.</div>
         </div>
     </footer>
     <script>
@@ -433,6 +433,16 @@
                 showContent(hash);
             }
         });
+        // Add an event listener to open or close the dropdown when clicking "CHARITY PROGRAMS"
+        document.getElementById("charity-programs").addEventListener("click", function (e) {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+            } else {
+                dropdownContent.style.display = 'block';
+            }
+        });
+
         function showContent(contentId) {
             // Hide all content sections
             hideAllContent();
