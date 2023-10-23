@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="#about-content" onclick="showContent('about-content')" style="text-decoration: none;">ABOUT</a></li>
-            <li class="dropdown" id="charity-programs">
+            <li class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
                 <a href="javascript:void(0)" class="dropbtn">CHARITY PROGRAMS</a>
                 <div class="dropdown-content">
                     <a href="#food-drives" onclick="showContent('food-drives')">Food Drives</a>
@@ -433,15 +433,15 @@
                 showContent(hash);
             }
         });
-        // Add an event listener to open or close the dropdown when clicking "CHARITY PROGRAMS"
-        document.getElementById("charity-programs").addEventListener("click", function (e) {
-            var dropdownContent = document.querySelector('.dropdown-content');
-            if (dropdownContent.style.display === 'block') {
-                dropdownContent.style.display = 'none';
-            } else {
-                dropdownContent.style.display = 'block';
-            }
-        });
+        var dropdownContent = document.querySelector('.dropdown-content');
+
+        function showDropdown() {
+            dropdownContent.style.display = 'block';
+        }
+
+        function hideDropdown() {
+            dropdownContent.style.display = 'none';
+        }
 
         function showContent(contentId) {
             // Hide all content sections
