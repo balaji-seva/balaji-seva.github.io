@@ -42,6 +42,16 @@ header {
     text-transform: uppercase;
     color: #d6531f;
 }
+.tag {
+    /* Your styles for the "tag" class */
+    font-size: 1.1rem;
+    color: navy; /* Example text color */
+    font-style: italic;
+    /* Other styles */
+    display: block;
+    margin: 0.5rem;
+}
+
 
 header h1 {
     margin: 0;
